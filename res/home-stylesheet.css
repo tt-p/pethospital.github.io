@@ -12,7 +12,7 @@ section h3 {
 }
 
 section.section-login {
-	background-image: url("https://github.com/tt-p/pethospital.github.io/blob/master/res/background/section-img.jpg");
+	background-image: url("https://raw.githubusercontent.com/tt-p/pethospital.github.io/master/res/background/section-img.jpg");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	height: 760px;

@@ -20,10 +20,10 @@ body {
 /* header */
 
 header {
-	background-color: #f7f7f9;
-	background-image: url("https://raw.githubusercontent.com/tt-p/pethospital.github.io/master/res/background/header-img.jpg");
-	background-position: top;
+	background-color: #000000;
+	background-image: url("https://github.com/tt-p/pethospital.github.io/blob/master/res/background/header-img.jpg");
 	background-repeat: no-repeat;
+	background-position: top;
 	height: 700px;
 }
 
@@ -171,6 +171,75 @@ nav {
 	color: #f7f7f9;
 }
 
+/* section */
+
+section.section-login {
+	background-image: url("../res/background/section-img.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 760px;
+}
+
+section h2 {
+	color: #d01c1f;
+	font-style: italic;
+	font-size: 40px;
+	margin: 0;
+	padding: 20px 0 0 0; 
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.section-login form {
+	display: table;
+	float: right;
+	height: 100%;
+	margin-right: 200px; 
+}
+
+form ul {
+	display: table-cell;
+	vertical-align: middle;
+	list-style-type: none;
+}
+
+form li {
+	margin: 20px;
+}
+
+section form label {
+	color: #d01c1f;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+#username , #password {
+	background-color: #f7f7f9;
+	border: 1px solid #d01c1f;
+	border-radius: 50px;
+	color: #d01c1f;
+	font-size: 30px;
+	height: 50px;
+	padding-left: 30px;
+	text-align: left;
+}
+
+section form input[type=submit] {
+	background-color: #f7f7f9;
+	border: 1px solid #d01c1f;
+	border-radius: 50px;
+	color: #d01c1f;
+	font-size: 20px;
+	padding: 10px;
+}
+
+#username:focus , #password:focus, section form input[type=submit]:focus {
+	background-color: #d01c1f;
+	border: 1px solid #f7f7f9;
+	color: #f7f7f9;
+	outline: none;
+}
+
 /* footer */
 
 footer {
@@ -178,16 +247,14 @@ footer {
 	color: #d3d3d3;
 	height: 400px;
 	position: relative;
-	width: 100%;
+	text-align: center;
 }
 
 .footer-top {
 	background-color: #212529;
 	padding: 10px 0 10px 0;
-	position: absolute;
 	text-align: center;
 	text-transform: uppercase;
-	width: 100%;
 }
 
 .footer-top a {
