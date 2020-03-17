@@ -12,7 +12,7 @@ section h3 {
 }
 
 section.section-login {
-	background-image: url("../res/background/section-img.jpg");
+	background-image: url("res/background/section-img.jpg");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	height: 760px;

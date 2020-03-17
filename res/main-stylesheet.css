@@ -21,7 +21,7 @@ body {
 
 header {
 	background-color: #f7f7f9;
-	background-image: url("../res/background/header-img.jpg");
+	background-image: url("res/background/header-img.jpg");
 	background-position: top;
 	background-repeat: no-repeat;
 	height: 700px;
