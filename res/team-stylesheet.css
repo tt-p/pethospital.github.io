@@ -1,0 +1,33 @@
+section.section-team {
+	background-color: #f7f7f9;
+	padding: 20px;
+}
+
+.section-team h2 {
+	border-bottom: 2px solid #d01c1f;
+	color: #d01c1f;
+	font-style: italic;
+	font-size: 40px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div.member-container {
+	padding: 20px;
+}
+
+.member-container h4 {
+	color: #d01c1f;
+	padding-left: 40px;
+	text-transform: capitalize;
+}
+
+div.info-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.info-container figcaption {
+	font-style: italic;
+}

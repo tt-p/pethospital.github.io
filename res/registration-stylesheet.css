@@ -1,0 +1,59 @@
+section.section-register {
+	background-color: #ffffff;
+	background-image: url(../res/background/register-img.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height: 1100px;
+	padding: 20px;
+}
+
+.section-register h2 {
+	border-bottom: 2px solid #d01c1f;
+	color: #d01c1f;
+	font-style: italic;
+	font-size: 40px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.section-register form {
+	padding: 20px 0 0 700px;
+}
+
+.section-register ul {
+	list-style: none;
+	display: block;
+}
+
+.section-register li {
+	padding: 10px;
+}
+
+.section-register form label {
+	color: #d01c1f;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+.section-register input, .section-register textarea {
+	background-color: #f7f7f9;
+	border: 1px solid #d01c1f;
+	border-radius: 50px;
+	color: #d01c1f;
+	font-size: 18px;
+	height: 24px;
+	padding-left: 30px;
+	text-align: left;
+}
+
+.section-register input:focus, .section-register textarea:focus{
+	background-color: #d01c1f;
+	border: 1px solid #f7f7f9;
+	color: #f7f7f9;
+	outline: none;
+}
+
+.section-register textarea {
+	height: 300px;
+}

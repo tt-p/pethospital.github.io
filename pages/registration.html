@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>registration</title>
+	<link rel="stylesheet" type="text/css" href="../res/main-stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../res/registration-stylesheet.css">
+</head>
+<body>
+
+	<header>
+
+		<div class="header-top">
+			<div class="header-tel">
+				<img src="../res/icons/social/call.png" alt="tel-logo">
+				<span><a href="tel://222-222-2626">222-222-2626</a></span>
+			</div>
+			<div class="header-mail">
+				<img src="../res/icons/social/mail.png" alt="mail-logo">
+				<a href="mailto:contact@pethospital.com"><span class="header-email">contact@pethospital.com</span></a>
+			</div>
+		</div>
+		<div class="header-mid">
+			<form action="https://www.google.com/search" method="get">
+				<label for="q">Looking for something ?</label>
+				<hr>
+				<input type=text name=q size="32" id=q>
+				<input type="submit" value="Search">
+			</form>
+		</div>
+		<h1>join us</h1>
+
+	</header>
+
+	<nav>
+		<div class="inner-nav">
+			<div class="logo-container">
+				<a href="index.html"><img src="../res/icons/logo/logo.png" alt="logo" class="nav-logo"></a>
+			</div>
+			<ul class="navigation">
+				<li><a href="index.html">home</a></li>
+				<li><a href="blog.html">blog</a></li>
+				<li><a href="services.html">services</a></li>
+				<li><a href="team.html">team</a></li>
+				<li><a href="gallery.html">gallery</a></li>
+				<li><a href="contact.html">contact</a></li>
+				<li><a href="#" id="current-page">registration</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="section-register">
+		<h2>registration form</h2>
+
+		<form action="success.html" method="post" enctype="multipart/form­data">
+
+			<ul>
+				<li>
+					<label for="name">name:</label>
+					<input type="text" name="name" id="name" required>
+				</li>
+				<li>
+					<label for="surname">surname:</label>
+					<input type="text" name="surname" id="surname" required>		
+				</li>
+				<li>
+					<label for="password">password:</label>
+					<input type="password" name="password" id="password" required>
+				</li>
+				<li>
+					<label for="email">email:</label>
+					<input type="email" name="email" id="email" placeholder="abc@xyz.com">
+				</li>
+				<li>
+					<label for="date">date of birth:</label>
+					<input type="date" name="date" id="date">
+				</li>
+				<li>
+					<label for="telephone">telephone:</label>
+					<input type="text" name="telephone" id="telephone" maxlength="11" placeholder="Max length is 11" required>
+				</li>
+				<li>
+					<label for="gender">gender:</label>
+					<input type="radio" name="gender" id="gender" value="male" checked> Male
+					<input type="radio" name="gender" id="gender" value="female"> Female
+				</li>
+				<li>
+					<label for="aboutme">abut me:</label>
+					<textarea name="aboutme" id="aboutme">
+						Enter text.
+					</textarea>
+				</li>
+				<li>
+					<label for="file-photo">upload your photo</label>
+					<input type="file" name="file-photo" id="file-photo">
+				</li>
+				<li>
+					<label for="pets">select your favorite animals</label><br>
+					<input type="checkbox" name="dog" id="pets">dog &emsp;
+					<input type="checkbox" name="cat" id="pets">cat<br>
+					<input type="checkbox" name="bird" id="pets">bird &emsp;
+					<input type="checkbox" name="fish" id="pets">fish<br>
+					<input type="checkbox" name="deer" id="pets">deer&emsp;
+					<input type="checkbox" name="wolf" id="pets">wolf<br>
+					<input type="checkbox" name="goat" id="pets">goat&emsp;
+					<input type="checkbox" name="bear" id="pets">bear<br>
+					<input type="checkbox" name="duck" id="pets">duck&emsp;
+					<input type="checkbox" name="fox" id="pets">fox<br>
+					<input type="checkbox" name="frog" id="pets">frog &emsp;
+					<input type="checkbox" name="other" id="pets">other<br>
+				</li>
+				<li>
+					<input type="submit" value="Submit">
+					<a href="registration.html"><input type="button" name="reset" value="Reset"></a>
+				</li>
+			</ul>
+
+		</form>
+
+	</section>
+
+	<footer>
+		<div class="footer-top"> <a href="#">back to top</a> </div>
+		<div class="footer-mid">
+			<div class="footer-section about">
+				<figure>
+					<img src="../res/icons/logo/logoWhite.png"
+					alt="logo" class="footer-logo">
+				</figure>
+				<hr><p>
+					&emsp; As we are the pethospital; we serve the highest quality health care for your pets with our experts and experienced staff by using advanced technology, continuing education, exchange and development programs with ethic values.
+				</p><hr>
+			</div>
+			<hr>
+			<div class="footer-section social">
+				<span>Social Media</span>
+				<ul>
+					<li><a class="social-icon" href="https://www.facebook.com/"><img src=
+						"../res/icons/social/facebookW.png" alt="facebook-logo"></a></li>
+					<li><a class="social-icon" href="https://www.instagram.com/"><img src=
+						"../res/icons/social/instagramW.png" alt="instagram-logo"></a></li>
+					<li><a class="social-icon" href="https://twitter.com/"><img src=
+						"../res/icons/social/twitterW.png" alt="twitter-logo"></a></li>
+					<li><a class="social-icon" href="https://www.youtube.com/"><img src=
+						"../res/icons/social/youtubeW.png" alt="youtube-logo"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			&copy; 2020 CENG · All rights reserved · Created by Taha Talha PINARLI
+		</div>
+	</footer>
+</body>
+</html>
