@@ -328,6 +328,9 @@ footer h5 {
     .carousel-caption h1 {
         font-size: 2.4em;
     }
+	.carousel-indicators {
+		display: none;
+	}
 
     .section-contact, .section-registration {
         padding: 0 4rem 4rem 4rem;
