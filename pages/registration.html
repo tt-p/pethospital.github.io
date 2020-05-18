@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Registration</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="../res/js/script.js"></script>
+    <link href="../res/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="header-tel col col-lg-2">
+                <img alt="tel-logo" src="../res/img/icon/call.png">
+                <span><a href="tel://222-222-2626">222-222-2626</a></span>
+            </div>
+            <div class="col-xs-auto">
+            </div>
+            <div class="header-mail col col-lg-4">
+                <img alt="mail-logo" src="../res/img/icon/mail.png">
+                <a href="mailto:contact@pethospital.com"><span class="header-email">contact@hospital.com</span></a>
+            </div>
+        </div>
+    </div>
+    <hr class="header-hr">
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><img alt="pethospital logo" id="logo" src="../res/img/logo/logo.png"></a>
+    <button aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="registration.html">REGISTRATION<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Background -->
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed1"></div>
+    </div>
+</figure>
+
+<!-- Contact Section -->
+<section class="section-registration">
+    <hr class="section-hr">
+    <h2 class="text-center">Registration Form</h2>
+    <hr class="section-hr padding">
+    <form id="register-form" action="success.html" enctype="multipart/form-data" method="post">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label id="name-label" for="name">Name</label>
+                <input onchange="isValid('name')" class="form-control" id="name" name="name" type="text">
+                <div id="name-feedback"></div>
+            </div>
+            <div class="form-group col-md-6">
+                <label id="surname-label" for="surname">Surname</label>
+                <input onchange="isValid('surname')" class="form-control" id="surname" type="text">
+                <div id="surname-feedback"></div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label id="email-label" for="email">Email</label>
+                <input onchange="emailIsValid()" class="form-control" id="email" name="email" placeholder="abc@xyz.com" type="text">
+                <div id="email-feedback"></div>
+            </div>
+            <div class="form-group col-md-6">
+                <label id="password-label" for="password">Password</label>
+                <input onchange="passwordIsValid()" class="form-control" id="password" name="password" type="password">
+                <i onclick="hidePass()" id="pass-vis" class="fa fa-fw fa-eye"></i>
+                <div id="password-feedback"></div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="form-group">
+            <label id="date-label" for="date">Date of Birth</label>
+            <input onchange="dateIsValid()" class="form-control" id="date" name="date" placeholder="dd-mm-yyyy" type="text">
+            <div id="date-feedback"></div>
+        </div>
+        <div class="form-group">
+            <label id="telephone-label" for="telephone">Telephone</label>
+            <input onchange="telIsValid()" class="form-control" id="telephone" name="telephone" placeholder="(0222) 456-7890" type="text">
+            <div id="telephone-feedback"></div>
+        </div>
+        <div class="form-group">
+            <label for="radios">Gender</label>
+            <div class="form-group" id="radios">
+                <div class="form-check form-check-inline">
+                    <input checked class="form-check-input" id="male" name="gender" type="radio" value="male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input checked class="form-check-input" id="female" name="gender" type="radio" value="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="aboutme">About Me</label>
+            <textarea class="form-control" id="aboutme" name="aboutme" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="file-photo">Upload Your Photo</label>
+            <input class="form-control-file" id="file-photo" name="file-photo" type="file">
+        </div>
+        <label for="pets">Select your favorite animals</label>
+        <div id="pets"  class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" id="pets1" name="dog" type="checkbox">
+                <label class="form-check-label" for="pets1">Dog</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="pets2" name="cat" type="checkbox">
+                <label class="form-check-label" for="pets2">Cat</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="pets3" name="bird" type="checkbox">
+                <label class="form-check-label" for="pets3">Bird</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="pets4" name="fish" type="checkbox">
+                <label class="form-check-label" for="pets4">Fish</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="pets5" name="turtle" type="checkbox">
+                <label class="form-check-label" for="pets5">Turtle</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="pets6" name="frog" type="checkbox">
+                <label class="form-check-label" for="pets6">Frog</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="pets7" name="other" type="checkbox">
+                <label class="form-check-label" for="pets7">Other</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <input onclick="formIsValid()" class="btn btn-primary" type="button" value="Send">
+            <input onclick="resetForm()" class="btn btn-outline-dark" type="button" value="Reset">
+        </div>
+    </form>
+</section>
+
+<!-- Background -->
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed2"></div>
+    </div>
+</figure>
+
+<!-- Footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="footer-top col-12">
+                <a href="#">back to top</a>
+            </div>
+            <div class="col-md-6">
+                <hr class="footer-hr">
+                <img alt="pethospital logo" id="logoWhite" src="../res/img/logo/logoWhite.png">
+                <hr class="footer-hr">
+                <p>555-555-5555</p>
+                <p>email@mail.com</p>
+                <p>City State 000000</p>
+            </div>
+            <div class="col-md-6 social">
+                <hr class="footer-hr">
+                <h5>Social Media</h5>
+                <hr class="footer-hr">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class=" footer-bottom col-12">
+                <h6>&copy; 2020 CENG · All rights reserved · Created by Taha Talha PINARLI</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

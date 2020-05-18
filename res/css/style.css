@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: montserrat, helvetica, serif;
+    color: #222;
+}
+
+#logo, #logoWhite {
+    height: 51px;
+    width: 198px;
+}
+
+.padding {
+    padding-bottom: 1.9rem;
+}
+
+h1, h2 {
+    color: #d01c1f;
+}
+
+h4 {
+    color: #00b1ae;
+}
+
+/* Header */
+.header-hr {
+    padding-bottom: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+}
+
+header > div {
+    padding: .8rem;
+}
+
+header a {
+    font-size: 1em;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-tel img {
+    height: 20px;
+    width: 20px;
+}
+
+.header-mail img {
+    height: 25px;
+    width: 25px;
+}
+
+
+/* Image Slider*/
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-primary {
+    background-color: #d01c1f;
+    border: 1px solid #ad181b;
+}
+
+.btn-primary:hover {
+    background-color: #ad181b;
+    border: 1px solid #ad181b;
+}
+
+.carousel-caption h1 {
+    color: #d01c1f;
+    font-size: 4.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider-search label {
+    color: #f7f7f9;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 15px #000;
+}
+
+.section-hr {
+    border-top: 1px solid #d5d5d5;
+    width: 90%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.social {
+    font-size: 4em;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube {
+    color: #f7f7f9;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-instagram:hover {
+    color: #517fa4;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+
+footer {
+    background-color: #1c2023;
+    color: #d3d3d3;
+}
+
+footer h5 {
+    padding-bottom: .65em;
+    padding-top: .65em;
+}
+
+.footer-hr {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-top {
+    background-color: #212529;
+    padding: 10px 0 10px 0;
+}
+
+.footer-top a {
+    color: #f7f7f9;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer-bottom {
+    background-color: #000000;
+    color: #f7f7f9;
+    padding-top: .5em;
+}
+
+/* --INDEX CSS START-- */
+
+.section-about, .section-login {
+    padding: 2em;
+    width: 100%;
+}
+
+.section-about {
+    background: #eee;
+}
+
+#login-img {
+    border: 1px;
+    border-radius: 20px;
+}
+
+/* --INDEX CSS END-- */
+
+/* --CONTACT-REGISTRATION CSS START-- */
+
+.section-contact, .section-registration {
+    padding: 0 4rem 4rem 4rem;
+    margin: 0 13rem 0 13rem;
+}
+
+.section-contact h2, .section-registration h2 {
+    font-size: 2.8em;
+}
+
+figure {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 0 !important;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixed1, #fixed2 {
+    background-image: url(file:///C:/Users/user/Desktop/Documents/Bim222Hw/pethospital%20v2/res/img/index/background4.jpeg);
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.feedback-valid {
+    color: green;
+}
+
+.feedback-invalid {
+    color: red;
+}
+
+.form-green {
+    border: 1px solid green;
+}
+
+.form-red {
+    border: 1px solid red;
+}
+
+#pass-vis {
+    float: right;
+    color: grey;
+    position: relative;
+    top: -1.7em;
+    margin-right: .8em; 
+}
+
+
+/* --CONTACT CSS END-- */
+
+/* --SUCCESS-RESPONSE CSS START-- */
+
+.success-text, .response-text {
+    padding-top: 2rem;
+    background-color: #eee;
+}
+
+/* --SUCCESS-RESPONSE CSS END-- */
+
+/* --GALLERY CSS START-- */
+
+.section-roundAnimal figure,
+.section-cuteAnimal figure,
+.section-hiddenAnimal figure,
+.section-wiseOwl figure,
+.section-breadDog figure,
+.section-lonelyMonkey figure {
+    padding: 2em;
+}
+
+.section-roundAnimal img {
+    border-radius: 50%;
+    height: 45%;
+    width: 45%;
+}
+
+.section-roundAnimal img,
+.section-cuteAnimal img,
+.section-hiddenAnimal img,
+.section-wiseOwl img,
+.section-breadDog img,
+.section-lonelyMonkey img {
+    border: 1px solid white;
+    box-shadow: gray 0 0 10px;
+}
+
+/* --GALLERY CSS END-- */
+
+/* --BLOG CSS START-- */
+
+.section-blog-info {
+    padding: 2.5em;
+}
+
+/* --BLOG CSS END-- */
+
+/* --SERVICES CSS START-- */
+.section-services-1,
+.section-services-2,
+.section-services-3 {
+    padding-top: 2em;
+}
+
+.section-services-2 div.col-12 p {
+    margin: 0 5em 0 5em;
+}
+
+.services-hidden {
+    margin-top: 8em;
+}
+
+/* --SERVICES CSS END-- */
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+    .slider-search label {
+        font-size: 2.75em;
+    }
+
+    .carousel-caption h1 {
+        font-size: 3.7em;
+    }
+
+    .section-contact, .section-registration {
+        padding: 0 4rem 4rem 4rem;
+        margin: 0 4rem 0 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 40%;
+    }
+
+    .slider-search label {
+        font-size: 2em;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.75em;
+    }
+
+    .section-contact, .section-registration {
+        padding: 0 4rem 4rem 4rem;
+        margin: 0 1.8rem 0 1.8rem;
+    }
+
+    .section-contact h2, .section-registration h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 35%;
+    }
+
+    .slider-search label {
+        font-size: 1.5em;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.6em;
+    }
+
+    .section-contact, .section-registration {
+        padding: 0 4rem 4rem 4rem;
+        margin: 0 1.5rem 0 1.5rem;
+    }
+
+    .section-contact h2, .section-registration h2 {
+        font-size: 2em;
+    }
+}
