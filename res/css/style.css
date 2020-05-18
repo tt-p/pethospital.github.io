@@ -210,7 +210,7 @@ figure {
 }
 
 #fixed1, #fixed2 {
-    background-image: url(file:///../res/img/index/background4.jpeg);
+    background-image: url("https://raw.githubusercontent.com/tt-p/pethospital.github.io/master/res/img/index/background4.jpeg");
     position: fixed;
     display: block;
     top: 0;
