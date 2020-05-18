@@ -50,7 +50,7 @@ h4 {
     box-shadow: 0 20px 20px -20px #333;
 }
 header > div {
-	padding: .8rem .4rem .8rem .4rem;
+	margin: .8rem .4rem .8rem .4rem;
 }
 header a {
     font-size: 1em;
@@ -69,7 +69,6 @@ header a {
 
 
 /* Image Slider*/
-
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -337,10 +336,7 @@ footer h5 {
     .section-contact h2, .section-registration h2 {
         font-size: 2em;
     }
-
-    header > div {
-    	padding: .6rem .2rem .6rem .2rem;
-	}
+	
     header a {
     	font-size: .8em;
     	color: #000000;
@@ -357,7 +353,7 @@ footer h5 {
 	}
 
 	.services-hidden {
-    	margin-top: 2em;
+    	margin-top: 2rem;
 	}
 
 }
