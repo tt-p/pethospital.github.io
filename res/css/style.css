@@ -50,8 +50,7 @@ h4 {
     box-shadow: 0 20px 20px -20px #333;
 }
 header > div {
-	padding-top: .8rem;
-	padding-bottom: .8rem;
+	padding: .8rem .4rem .8rem .4rem;
 }
 header a {
     font-size: 1em;
@@ -167,7 +166,7 @@ footer h5 {
 .section-contact h2, .section-registration h2 {
     font-size: 2.8em;
 }
-.section-contact figure, .section-registration figure {
+.fixed-figure {
     position: relative;
     width: 100%;
     height: 50%;
@@ -303,7 +302,7 @@ footer h5 {
     }
 
     .carousel-caption h1 {
-        font-size: 2.75em;
+        font-size: 2.6em;
     }
 
     .section-contact, .section-registration {
@@ -314,17 +313,19 @@ footer h5 {
     .section-contact h2, .section-registration h2 {
         font-size: 2.5em;
     }
+
+    .services-hidden {
+    	margin-top: 3.5em;
+	}
 }
 
 @media (max-width: 576px) {
     .carousel-caption {
         top: 35%;
     }
-
     .slider-search label {
         font-size: 1.5em;
     }
-
     .carousel-caption h1 {
         font-size: 2.4em;
     }
@@ -333,14 +334,12 @@ footer h5 {
         padding: 0 4rem 4rem 4rem;
         margin: 0 1.5rem 0 1.5rem;
     }
-
     .section-contact h2, .section-registration h2 {
         font-size: 2em;
     }
 
     header > div {
-    	padding-top: .5rem;
-		padding-bottom: .5rem;
+    	padding: .6rem .2rem .6rem .2rem;
 	}
     header a {
     	font-size: .8em;
@@ -355,6 +354,10 @@ footer h5 {
 	.header-mail img {
     	height: 22px;
     	width: 22px;
+	}
+
+	.services-hidden {
+    	margin-top: 2em;
 	}
 
 }
