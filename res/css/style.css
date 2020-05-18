@@ -206,7 +206,7 @@ figure {
 }
 
 #fixed1, #fixed2 {
-    background-image: url(file:///C:/Users/user/Desktop/Documents/Bim222Hw/pethospital%20v2/res/img/index/background4.jpeg);
+    background-image: url(file:///../res/img/index/background4.jpeg);
     position: fixed;
     display: block;
     top: 0;
