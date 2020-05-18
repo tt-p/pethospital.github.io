@@ -16,12 +16,28 @@ html, body {
     padding-bottom: 1.9rem;
 }
 
+.btn-primary {
+    background-color: #d01c1f;
+    border: 1px solid #ad181b;
+}
+.btn-primary:hover {
+    background-color: #ad181b;
+    border: 1px solid #ad181b;
+}
+
 h1, h2 {
     color: #d01c1f;
 }
 
 h4 {
     color: #00b1ae;
+}
+
+.section-hr {
+    border-top: 1px solid #d5d5d5;
+    width: 90%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
 }
 
 /* Header */
@@ -33,30 +49,23 @@ h4 {
     border-bottom: 2px solid #1f1209;
     box-shadow: 0 20px 20px -20px #333;
 }
-
 header > div {
-    padding: .8rem;
+	padding-top: .8rem;
+	padding-bottom: .8rem;
 }
-
 header a {
-    font-size: .85em;
+    font-size: 1em;
     color: #000000;
     font-weight: bold;
     text-decoration: none;
 }
-
 .header-tel img {
-	padding: 0;
-    margin: 0;
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
 }
-
 .header-mail img {
-	padding: 0;
-    margin: 0;
-    height: 22px;
-    width: 22px;
+    height: 26px;
+    width: 26px;
 }
 
 
@@ -66,30 +75,17 @@ header a {
     width: 100%;
     height: 100%;
 }
-
 .carousel-caption {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
-
-.btn-primary {
-    background-color: #d01c1f;
-    border: 1px solid #ad181b;
-}
-
-.btn-primary:hover {
-    background-color: #ad181b;
-    border: 1px solid #ad181b;
-}
-
 .carousel-caption h1 {
     color: #d01c1f;
     font-size: 4.8em;
     font-weight: bold;
     text-transform: uppercase;
 }
-
 .slider-search label {
     color: #f7f7f9;
     font-size: 3.5em;
@@ -97,67 +93,49 @@ header a {
     text-shadow: 1px 1px 15px #000;
 }
 
-.section-hr {
-    border-top: 1px solid #d5d5d5;
-    width: 90%;
-    margin-top: .8rem;
-    margin-bottom: 1rem;
-}
-
 /* FOOTER */
 .social {
     font-size: 4em;
 }
-
 .fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube {
     color: #f7f7f9;
 }
-
 .fa-facebook:hover {
     color: #3b5998;
 }
-
 .fa-twitter:hover {
     color: #00aced;
 }
-
 .fa-instagram:hover {
     color: #517fa4;
 }
-
 .fa-youtube:hover {
     color: #bb0000;
 }
-
 footer {
     background-color: #1c2023;
     color: #d3d3d3;
 }
-
 footer h5 {
     padding-bottom: .65em;
     padding-top: .65em;
 }
-
 .footer-hr {
     border-top: 1px solid #d5d5d5;
     width: 75%;
     margin-top: .8rem;
     margin-bottom: 1rem;
 }
-
 .footer-top {
     background-color: #212529;
     padding: 10px 0 10px 0;
 }
-
 .footer-top a {
     color: #f7f7f9;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
 }
-
 .footer-bottom {
     background-color: #000000;
     color: #f7f7f9;
@@ -170,11 +148,9 @@ footer h5 {
     padding: 2em;
     width: 100%;
 }
-
 .section-about {
     background: #eee;
 }
-
 #login-img {
     border: 1px;
     border-radius: 20px;
@@ -188,18 +164,15 @@ footer h5 {
     padding: 0 4rem 4rem 4rem;
     margin: 0 13rem 0 13rem;
 }
-
 .section-contact h2, .section-registration h2 {
     font-size: 2.8em;
 }
-
-figure {
+.section-contact figure, .section-registration figure {
     position: relative;
     width: 100%;
     height: 50%;
     margin: 0 !important;
 }
-
 .fixed-wrap {
     clip: rect(0, auto, auto, 0);
     position: absolute;
@@ -208,7 +181,6 @@ figure {
     width: 100%;
     height: 100%;
 }
-
 #fixed1, #fixed2 {
     background-image: url("https://raw.githubusercontent.com/tt-p/pethospital.github.io/master/res/img/index/background4.jpeg");
     position: fixed;
@@ -223,23 +195,18 @@ figure {
     transform: translateZ(0);
     will-change: transform;
 }
-
 .feedback-valid {
     color: green;
 }
-
 .feedback-invalid {
     color: red;
 }
-
 .form-green {
     border: 1px solid green;
 }
-
 .form-red {
     border: 1px solid red;
 }
-
 #pass-vis {
     float: right;
     color: grey;
@@ -247,7 +214,6 @@ figure {
     top: -1.7em;
     margin-right: .8em; 
 }
-
 
 /* --CONTACT CSS END-- */
 
@@ -270,13 +236,11 @@ figure {
 .section-lonelyMonkey figure {
     padding: 2em;
 }
-
 .section-roundAnimal img {
     border-radius: 50%;
     height: 45%;
     width: 45%;
 }
-
 .section-roundAnimal img,
 .section-cuteAnimal img,
 .section-hiddenAnimal img,
@@ -303,11 +267,9 @@ figure {
 .section-services-3 {
     padding-top: 2em;
 }
-
 .section-services-2 div.col-12 p {
     margin: 0 5em 0 5em;
 }
-
 .services-hidden {
     margin-top: 8em;
 }
@@ -364,7 +326,7 @@ figure {
     }
 
     .carousel-caption h1 {
-        font-size: 2.6em;
+        font-size: 2.4em;
     }
 
     .section-contact, .section-registration {
@@ -375,4 +337,24 @@ figure {
     .section-contact h2, .section-registration h2 {
         font-size: 2em;
     }
+
+    header > div {
+    	padding-top: .5rem;
+		padding-bottom: .5rem;
+	}
+    header a {
+    	font-size: .8em;
+    	color: #000000;
+    	font-weight: bold;
+    	text-decoration: none;
+	}
+	.header-tel img {
+    	height: 16px;
+    	width: 16px;
+	}
+	.header-mail img {
+    	height: 22px;
+    	width: 22px;
+	}
+
 }
