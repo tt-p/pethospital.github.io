@@ -28,7 +28,9 @@ html, body {
 h1, h2 {
     color: #d01c1f;
 }
-
+h3{
+    font-weight: bold;
+}
 h4 {
     color: #00b1ae;
 }
@@ -256,6 +258,10 @@ footer h5 {
 .section-blog-info {
     padding: 2.5em;
 }
+.hidden-btn {
+    width: 100%;
+    margin-bottom: 2rem;
+}
 
 /* --BLOG CSS END-- */
 
@@ -271,7 +277,12 @@ footer h5 {
 .services-hidden {
     margin-top: 8em;
 }
-
+.video-hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+        to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 /* --SERVICES CSS END-- */
 
 /* RESPONSIVE */
@@ -319,6 +330,10 @@ footer h5 {
 }
 
 @media (max-width: 576px) {
+    .display-2 {
+        font-size: 4em;
+    }
+
     .carousel-caption {
         top: 35%;
     }
