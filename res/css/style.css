@@ -20,7 +20,7 @@ html, body {
     background-color: #d01c1f;
     border: 1px solid #ad181b;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
     background-color: #ad181b;
     border: 1px solid #ad181b;
 }
@@ -147,6 +147,9 @@ footer h5 {
 .section-about, .section-login {
     padding: 2em;
     width: 100%;
+}
+#section-login-show {
+    display: none;
 }
 .section-about {
     background: #eee;
