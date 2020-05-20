@@ -2,6 +2,7 @@ function answer() {
 	const inputVal = document.getElementById("question").value;
 	if (inputVal.length === 0) {
 		alert("You didn't ask a question!");
+		return;
 	}
 	var ans;
 	switch(Math.floor(Math.random() * 6)) {
