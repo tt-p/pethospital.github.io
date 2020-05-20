@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="../res/js/script.js"></script>
     <link href="../res/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -78,28 +79,31 @@
     <hr class="section-hr">
     <h2 class="display-4 text-center">Contact Form</h2>
     <hr class="section-hr padding">
-    <form action="response.html" method="post">
+    <form id="contact-form" action="response.html" method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="name">Name:</label>
-                <input class="form-control" id="name" name="name" required type="text">
+                <label id="name-label" for="name">Name</label>
+                <input onchange="isValid('name')" class="form-control" id="name" name="name" type="text">
+                <div id="name-feedback"></div>
             </div>
             <div class="form-group col-md-6">
-                <label for="surname">Surname</label>
-                <input class="form-control" id="surname" required type="text">
+                <label id="surname-label" for="surname">Surname</label>
+                <input onchange="isValid('surname')" class="form-control" id="surname" type="text">
+                <div id="surname-feedback"></div>
             </div>
         </div>
         <div class="form-group">
-            <label for="email">Email:</label>
-            <input class="form-control" id="email" name="email" placeholder="E.g. abc@xyz.com" required type="email">
+            <label id="email-label" for="email">Email</label>
+                <input onchange="emailIsValid()" class="form-control" id="email" name="email" placeholder="abc@xyz.com" type="text">
+                <div id="email-feedback"></div>
         </div>
         <div class="form-group">
-            <label for="telephone">Telephone:</label>
-            <input class="form-control" id="telephone" maxlength="11" name="telephone" placeholder="Max length is 11"
-                   required type="text">
+            <label id="telephone-label" for="telephone">Telephone</label>
+            <input onchange="telIsValid()" class="form-control" id="telephone" name="telephone" placeholder="(0222) 456-7890" type="text">
+            <div id="telephone-feedback"></div>
         </div>
         <div class="form-group">
-            <label for="issue">Issue:</label>
+            <label for="issue">Issue</label>
             <select class="form-control" id="issue" name="issue">
                 <option selected>Choose...</option>
                 <option value="xwalk">Pet cannot walk</option>
@@ -110,11 +114,12 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="message">Message;</label>
-            <textarea class="form-control" id="message" name="message" rows="6"></textarea>
+            <label for="message">Message</label>
+            <textarea onchange="messageIsValid()" class="form-control" id="message" name="message" rows="6"></textarea>
+            <div id="message-feedback"></div>
         </div>
         <div class="form-group">
-            <input class="btn btn-primary" type="submit" value="Send">
+            <input onclick="contactSend()" class="btn btn-primary" type="button" value="Send">
         </div>
     </form>
 </section>

@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="../res/js/index-script.js"></script>
+    <script src="../res/js/script.js"></script>
     <link href="../res/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                    	<input onclick="formIsValid()" class="btn btn-primary" type="button" value="Login">
+                    	<input onclick="login()" class="btn btn-primary" type="button" value="Login">
                         <a class="btn btn-outline-dark" href="registration.html">New User</a>
                     </div>
                 </form>
@@ -152,6 +152,7 @@
     	<div class="row align-items-center">
     		<div class="col-md-8">
     			<h4 id="h4-welcome" class="display-4"></h4>
+                <h5 id="h5-welcome"></h5>
     		</div>
     		<div class="col-md-4 text-center">
     			<img alt="funny image" class="img-fluid" id="login-img" src="../res/img/index/login-img.jpg">
