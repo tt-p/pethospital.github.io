@@ -6,10 +6,10 @@ Used HTML5, CSS3, BOOTSTRAP4, JS technologies.
 ## Please Visit
 
 ```
-site: https://tt-p.github.io/pethospital.github.io/gh-pages/index.html
+site: [pethospital](https://tt-p.github.io/pethospital.github.io/gh-pages/index.html)
 ```
 
-# Note
+### Note
 
 Html post method fails on github pages.
 Response.html and success.html pages cannot be accessed via forms.
