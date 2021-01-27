@@ -5,9 +5,7 @@ Used HTML5, CSS3, BOOTSTRAP4, JS technologies.
 
 ## Please Visit
 
-```
-site: [pethospital](https://tt-p.github.io/pethospital.github.io/gh-pages/index.html)
-```
+Site: [pethospital](https://tt-p.github.io/pethospital.github.io/gh-pages/index.html)
 
 ### Note
 
